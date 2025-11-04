@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 body {
   font-family: "Outfit", sans-serif;
-  background-color: #fff1e6;
 }
 
 .navbar {
-  background-color: #cddafd;
+
   font-size: 2rem;
-  color: #f0efeb;
+  color: white;
   font-weight: 600;
 }
 
@@ -20,14 +19,6 @@ body {
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
-}
-
-.list-group-item-success {
-  color: #155724;
-}
-
-.list-group-item-warning {
-  color: #856404;
 }
 .btn-sm {
   padding: 0.25rem 0.5rem;

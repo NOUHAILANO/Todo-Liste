@@ -6,18 +6,17 @@ Une simple PHP/MySQL "To-Do List" application crée en binôme.
 1. Importer `sql/db.sql` en phpMyAdmin.
 2. Placer le project dans le fichier `httdocs` (XAMPP).
 3. Executer `http://localhost/Todo_Liste`.
-Bien sûr Nouhaila 🌟 ! Voici ton **rapport complet en français** au format Markdown (`.md`), prêt à être collé dans Visual Studio Code, GitHub ou tout éditeur compatible :
 
 ---
 
-```markdown
+
 # 📋 Rapport de projet : Application To-Do List en PHP et MySQL
 
 ## 🗂️ 1. Page de couverture
 
-**Titre du projet :** Application To-Do List en PHP et MySQL  
-**Nom :** Nouhaila  
-**Année scolaire :** 2025–2026
+**Titre du projet :** Application To-Do List en PHP et MySQL
+
+**Développé par :** [ Nouhaila BOUTRIQUE ] et [ Afaf AHADAD ] dans le cadre d'un projet collaboratif.
 
 ---
 
@@ -51,22 +50,27 @@ Ce projet consiste à développer une application web permettant de gérer des t
 ## 🧱 5. Structure du projet
 
 ```
-/todo-app/
+/Todo-Liste/
 │
-├── index.php
-├── db.php
-├── add.php
-├── update.php
-├── delete.php
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
-└── screenshots/
-    ├── interface.jpeg
-    ├── mobile.jpeg
-    └── vscode.png
+├──── config/
+│     └── connexion.php
+├──── front-end/
+│     └─── includes/
+│          └─── header.php
+│     └── public/
+│          └─── style.css
+│     └── templates/
+│       │── add-task-form.php
+│       └── tasks-list.php
+├── images/
+│       │── phone_view.png
+│       │── toDoList_view.gif
+│       └── web_view.png
+│──── sql/
+│      └── db.sql
+│── README.md
+└── index.php
+    
 ```
 
 ---
@@ -78,40 +82,13 @@ La base de données contient une table `todo` avec les champs suivants :
 | Champ        | Type         | Description                       |
 |--------------|--------------|-----------------------------------|
 | `id`         | INT (PK)     | Identifiant unique |
-| `title`      | VARCHAR(255) | Titre de la tâche |
+| `title`      | VARCHAR(2048) | Titre de la tâche |
 | `done`       | BOOLEAN      | État (faite ou non) |
 | `created_at` | DATETIME     | Date de création |
 
 ---
 
-## 🧩 7. Code principal
-
-### Connexion à la base (`db.php`)
-```php
-$conn = new mysqli('localhost', 'root', '', 'todo_db');
-```
-
-### Ajouter une tâche (`add.php`)
-```php
-$title = $_POST['title'];
-$conn->query("INSERT INTO todo (title, done, created_at) VALUES ('$title', 0, NOW())");
-```
-
-### Mettre à jour l’état (`update.php`)
-```php
-$id = $_GET['id'];
-$conn->query("UPDATE todo SET done = NOT done WHERE id = $id");
-```
-
-### Supprimer une tâche (`delete.php`)
-```php
-$id = $_GET['id'];
-$conn->query("DELETE FROM todo WHERE id = $id");
-```
-
----
-
-## 🖼️ 8. Captures d’écran
+## 🖼️ 7. Captures d’écran
 
 ### 🖥️ Interface principale
 ![Interface](./media/Web_view.png)
@@ -124,7 +101,7 @@ $conn->query("DELETE FROM todo WHERE id = $id");
 
 ---
 
-## 🧪 9. Tests réalisés
+## 🧪 10. Tests réalisés
 
 | Fonctionnalité         | Résultat attendu        | Statut |
 |------------------------|-------------------------|--------|
@@ -135,7 +112,7 @@ $conn->query("DELETE FROM todo WHERE id = $id");
 
 ---
 
-## 🚀 10. Améliorations possibles
+## 🚀 11. Améliorations possibles
 
 - Ajout d’un système d’utilisateurs
 - Priorisation des tâches
@@ -144,8 +121,10 @@ $conn->query("DELETE FROM todo WHERE id = $id");
 
 ---
 
-## 🎓 11. Conclusion
+## 🎓 12. Conclusion
 
-Ce projet m’a permis de renforcer mes compétences en développement web, notamment en PHP et MySQL. Il m’a aussi sensibilisée à l’importance de l’ergonomie et de la responsivité dans les interfaces modernes. L’application est fonctionnelle et constitue une base solide pour des évolutions futures.
+📌📌En plus de consolider nos compétences en développement web (PHP/MySQL), ce projet nous a permis 
+de **parfaire notre maîtrise de Git et des workflows collaboratifs sur GitHub**. L'accent a également 
+été mis sur l'ergonomie et la responsivité, livrant ainsi une application fonctionnelle et extensible.
 
-```
+

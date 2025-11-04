@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 body {
   font-family: "Outfit", sans-serif;
+  background-color: #fad2e1;
 }
 
 .navbar {
-
+  background-color: #ff5d8f;
   font-size: 2rem;
-  color: white;
+  color: #f8f7ff;
   font-weight: 600;
+}
+
+h4 {
+  background-color: #bde0fe;
+  border: none;
+  width: 40%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
 }
 
 .list-group-item {
@@ -15,6 +25,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.list-group-items-success {
+  background-color: #b8b8ff;
+}
+
+.list-group-items-warning {
+  background-color: #ffadad;
 }
 
 .btn-sm {
@@ -25,10 +43,17 @@ body {
   font-size: 0.8rem;
 }
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
+  border-radius: 10px;
 }
 .btn-outline-danger {
-  color: #dc3545;
-  border-color: #dc3545;
+  border-radius: 10px;
+}
+.form-btn {
+  background-color: #bde0fe;
+}
+.form-btn:hover {
+  background-color: #9dd1ff;
+}
+.task {
+  gap: 1rem;
 }

@@ -8,9 +8,9 @@
         <?php if (!empty($taches)): ?>
             <?php foreach ($taches as $task): ?>
                 <li class="list-group-item 
-            <?= $task['done'] ? 'list-group-item-success' : 'list-group-item-warning' ?>">
+            <?= $task['done'] ? 'list-group-items-success' : 'list-group-items-warning' ?>">
 
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="task d-flex justify-content-between align-items-center">
                         <!-- Titre de la tâche -->
                         <span><?= htmlspecialchars($task['title']) ?></span>
 

@@ -2,7 +2,8 @@
 // ----------------------
 // Inclusion de la config
 // ----------------------
-include 'connexion.php';
+include 'config/connexion.php';
+
 
 // ----------------------
 // Traitement des actions POST
@@ -10,7 +11,7 @@ include 'connexion.php';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $action = $_POST["action"] ?? null;
 
-    // Ajouter une nouvelle tâche
+
     if ($action === "new") {
         $title = trim($_POST["title"] ?? '');
         if ($title !== '') {
@@ -19,10 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $stmt->execute();
             $stmt->close();
         }
-    }
-
-    // Supprimer ou basculer une tâche (done / not done)
-    elseif (($action === "delete" || $action === "toggle") && isset($_POST["id"])) {
+    } elseif (($action === "delete" || $action === "toggle") && isset($_POST["id"])) {
         $id = (int)$_POST["id"];
 
         if ($action === "delete") {
@@ -36,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->close();
     }
 
-    // Redirection après action
+
     header("Location: " . $_SERVER["PHP_SELF"]);
     exit;
 }
@@ -61,6 +59,7 @@ $conn->close();
 <?php require_once 'config\connexion.php'; ?>
 <?php include 'front-end\includes\header.php'; ?>
 <?php include 'front-end\templates\add-task-form.php'; ?>
+<?php include 'front-end\templates\tasks-list.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 

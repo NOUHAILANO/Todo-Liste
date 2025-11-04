@@ -1,12 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 body {
-    font-family: "Outfit", sans-serif;
-    background-color: #fff1e6;
+  font-family: "Outfit", sans-serif;
+  background-color: #fff1e6;
 }
 
 .navbar {
-    background-color: #cddafd;
-    font-size: 2rem;
-    color: #f0efeb;
-    font-weight: 600;
+  background-color: #cddafd;
+  font-size: 2rem;
+  color: #f0efeb;
+  font-weight: 600;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+}
+
+.list-group-item-success {
+  color: #155724;
+}
+
+.list-group-item-warning {
+  color: #856404;
+}
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
 }

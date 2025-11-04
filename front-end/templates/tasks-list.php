@@ -21,7 +21,7 @@
 
                             <!-- Bouton Toggle -->
                             <button type="submit" name="action" value="toggle" class="btn btn-sm btn-outline-secondary">
-                                <?= $task['done'] ? 'Annuler' : 'Terminer' ?>
+                                <?= $task['done'] ? 'Done' : 'UnDone' ?>
                             </button>
 
                             <!-- Bouton Delete -->

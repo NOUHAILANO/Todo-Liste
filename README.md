@@ -114,13 +114,13 @@ $conn->query("DELETE FROM todo WHERE id = $id");
 ## 🖼️ 8. Captures d’écran
 
 ### 🖥️ Interface principale
-![Interface](screenshots/interface.jpeg)
+![Interface](./image/Web_view.png)
 
 ### 📱 Version mobile
-![Mobile](screenshots/mobile.jpeg)
+![Mobile](./image/Phone_view.png)
 
 ### 💻 Fichier README dans VS Code
-![VS Code](screenshots/vscode.png)
+![VS Code](./image/vscode.png)
 
 ---
 

@@ -8,3 +8,6 @@ CREATE TABLE IF NOT EXISTS `todo` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 );
+
+ALTER DATABASE todolist CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE todo CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

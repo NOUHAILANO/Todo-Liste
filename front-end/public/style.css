@@ -6,10 +6,7 @@ body {
   background: linear-gradient(135deg, #fad2e1, #ffd6a5);
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+
 }
 
 /* ===== Container ===== */

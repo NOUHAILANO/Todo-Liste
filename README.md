@@ -91,13 +91,13 @@ La base de données contient une table `todo` avec les champs suivants :
 ## 🖼️ 7. Captures d’écran
 
 ### 🖥️ Interface principale
-![Interface](./media/Web_view.png)
+![Interface](./images/Web_view.png)
 
 ### 📱 Version mobile
-![Mobile](./media/Phone_view.png)
+![Mobile](./images/Phone_view.png)
 
 ### 📷 Capture video
-![Interface Video](./media/ToDoList_view.gif)
+![Interface Video](./images/ToDoList_view.gif)
 
 ---
 

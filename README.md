@@ -114,13 +114,13 @@ $conn->query("DELETE FROM todo WHERE id = $id");
 ## 🖼️ 8. Captures d’écran
 
 ### 🖥️ Interface principale
-![Interface](./image/Web_view.png)
+![Interface](./media/Web_view.png)
 
 ### 📱 Version mobile
-![Mobile](./image/Phone_view.png)
+![Mobile](./media/Phone_view.png)
 
 ### 📷 Capture video
-![Interface Video](./image/ToDoList_view.gif)
+![Interface Video](./media/ToDoList_view.gif)
 
 ---
 
@@ -149,7 +149,3 @@ $conn->query("DELETE FROM todo WHERE id = $id");
 Ce projet m’a permis de renforcer mes compétences en développement web, notamment en PHP et MySQL. Il m’a aussi sensibilisée à l’importance de l’ergonomie et de la responsivité dans les interfaces modernes. L’application est fonctionnelle et constitue une base solide pour des évolutions futures.
 
 ```
-
----
-
- add
